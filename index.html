@@ -1,112 +1,111 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>GB Mega Constructions</title>
+  <title>GB Mega Construction</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <style>
+    body { margin:0; font-family: Arial; line-height:1.6; }
 
-<style>
-body {margin:0;font-family:Arial;}
+    header {
+      background:#111;
+      color:#fff;
+      padding:15px;
+      text-align:center;
+    }
 
-header {
-  background:#111;
-  color:white;
-  text-align:center;
-  padding:20px;
-  animation: fadeDown 1s ease;
-}
+    header img {
+      width:80px;
+      display:block;
+      margin:auto;
+      margin-bottom:10px;
+    }
 
-@keyframes fadeDown {
-  from {opacity:0; transform:translateY(-20px);}
-  to {opacity:1; transform:translateY(0);}
-}
+    nav {
+      background:#333;
+      padding:12px;
+      text-align:center;
+      position:sticky;
+      top:0;
+    }
 
-nav {
-  background:#222;
-  padding:10px;
-  text-align:center;
-}
+    nav a {
+      color:white;
+      margin:10px;
+      text-decoration:none;
+      font-weight:bold;
+    }
 
-nav a {
-  color:white;
-  margin:0 15px;
-  text-decoration:none;
-  transition:0.3s;
-}
+    .hero {
+      background:url('https://images.unsplash.com/photo-1503387762-592deb58ef4e') no-repeat center;
+      background-size:cover;
+      color:white;
+      padding:120px 20px;
+      text-align:center;
+    }
 
-nav a:hover {color:orange;}
+    .hero h1 { font-size:45px; }
 
-.hero {
-  background:url('https://images.unsplash.com/photo-1503387762-592deb58ef4e') center/cover;
-  height:80vh;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  color:white;
-  font-size:35px;
-  animation: zoomHero 1.5s ease;
-}
+    .btn {
+      background:#ff6600;
+      padding:12px 25px;
+      color:white;
+      text-decoration:none;
+      border-radius:5px;
+      margin:5px;
+      display:inline-block;
+    }
 
-@keyframes zoomHero {
-  from {transform:scale(1.1); opacity:0;}
-  to {transform:scale(1); opacity:1;}
-}
+    .section {
+      padding:50px 20px;
+      text-align:center;
+    }
 
-section {padding:40px;}
+    .cards {
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:center;
+    }
 
-.services, .review-container {
-  display:flex;
-  flex-wrap:wrap;
-  gap:20px;
-}
+    .card {
+      width:250px;
+      margin:15px;
+      padding:20px;
+      border:1px solid #ddd;
+      border-radius:10px;
+    }
 
-.box {
-  flex:1;
-  min-width:250px;
-  padding:20px;
-  box-shadow:0 0 10px rgba(0,0,0,0.1);
-  transition:0.3s;
-}
+    .gallery img {
+      width:280px;
+      margin:10px;
+      border-radius:10px;
+    }
 
-.box:hover {
-  transform:translateY(-8px);
-}
+    footer {
+      background:#111;
+      color:white;
+      text-align:center;
+      padding:20px;
+    }
 
-.review img {
-  width:60px;
-  border-radius:50%;
-}
-
-footer {
-  background:#111;
-  color:white;
-  text-align:center;
-  padding:15px;
-}
-
-/* Floating Buttons */
-.whatsapp, .call {
-  position:fixed;
-  right:20px;
-  padding:12px 15px;
-  color:white;
-  border-radius:50px;
-  text-decoration:none;
-  font-weight:bold;
-}
-
-.whatsapp {bottom:20px; background:#25D366;}
-.call {bottom:80px; background:#ff9800;}
-
-</style>
+    .whatsapp {
+      position:fixed;
+      bottom:20px;
+      right:20px;
+      background:#25D366;
+      color:white;
+      padding:12px 18px;
+      border-radius:50px;
+      text-decoration:none;
+    }
+  </style>
 </head>
 
 <body>
 
 <header>
-  <h1>GB Mega Constructions</h1>
+  <img src="logo.png">
+  <h1>GB Mega Construction</h1>
   <p>Where dreams are built, one brick at a time.</p>
 </header>
 
@@ -114,108 +113,80 @@ footer {
   <a href="#">Home</a>
   <a href="#about">About</a>
   <a href="#services">Services</a>
-  <a href="#reviews">Reviews</a>
+  <a href="#projects">Projects</a>
   <a href="#contact">Contact</a>
 </nav>
 
 <div class="hero">
-  Building Your Future
+  <h1>Building Your Future</h1>
+  <p>Trusted Construction Services in Jammu</p>
+  <a class="btn" href="tel:+919541393521">Call Now</a>
+  <a class="btn" href="https://wa.me/919541393521">WhatsApp</a>
 </div>
 
-<!-- ABOUT -->
-<section id="about" data-aos="fade-up">
-<h2>About Us</h2>
-
-<p>
-GB Mega Constructions is a trusted and growing construction company delivering high-quality residential and commercial projects with modern design and strong structure.
-</p>
-
-<p>
-Our expert team focuses on precision, safety, and timely delivery. We believe in building long-term relationships with our clients through trust and quality work.
-</p>
-
-<p>
-From small homes to large commercial buildings, we ensure every project meets the highest standards.
-</p>
-</section>
-
-<!-- SERVICES -->
-<section id="services" data-aos="fade-up">
-<h2>Our Services</h2>
-
-<div class="services">
-
-<div class="box">
-<h3>House Construction</h3>
-<p>Complete residential construction with modern designs.</p>
+<div class="section" id="about">
+  <h2>About Us</h2>
+  <p>We are a trusted construction company delivering high-quality residential and commercial projects with complete customer satisfaction.</p>
 </div>
 
-<div class="box">
-<h3>Commercial Projects</h3>
-<p>Shops, offices and commercial buildings construction.</p>
+<div class="section" id="services">
+  <h2>Our Services</h2>
+  <div class="cards">
+    <div class="card">Residential Construction</div>
+    <div class="card">Commercial Projects</div>
+    <div class="card">Interior Design</div>
+    <div class="card">Renovation Work</div>
+  </div>
 </div>
 
-<div class="box">
-<h3>Renovation</h3>
-<p>Upgrade your old property with new style and strength.</p>
+<div class="section gallery" id="projects">
+  <h2>Our Projects</h2>
+  <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e">
+  <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd">
+  <img src="https://images.unsplash.com/photo-1509395176047-4a66953fd231">
 </div>
 
-<div class="box">
-<h3>Interior Design</h3>
-<p>Modern interiors that match your lifestyle.</p>
+<div class="section">
+  <h2>Client Reviews</h2>
+  <p>⭐️⭐️⭐️⭐️⭐️ Excellent work quality!</p>
+  <p>⭐️⭐️⭐️⭐️⭐️ Highly recommended service.</p>
 </div>
 
+<div class="section" id="contact">
+  <h2>Contact Us</h2>
+
+  <p><b>📍 Address:</b><br>
+  Plot No. 127, Behind Geeta Mandir,<br>
+  Near Karan Hotel, Bakshi Nagar, Jammu</p>
+
+  <p><b>📞 Call Us:</b><br>
+  <a href="tel:+919541393521">+91 95413 93521</a><br>
+  <a href="tel:+918492893521">+91 84928 93521</a>
+  </p>
+
+  <br>
+
+  <a class="btn" href="https://maps.app.goo.gl/75HpwdWBGeQumM2j6?g_st=ic" target="_blank">
+    Get Directions
+  </a>
+
+  <br><br>
+
+  <!-- 👉 Yaha apna https://maps.app.goo.gl/z2QPgdLjzWtRogLc7?g_st=ic embed map daalna (Google Maps se) -->
+  <iframe 
+  src="https://maps.google.com/maps?q=Bakshi%20Nagar%20Jammu&output=embed"
+  width="100%" height="300" style="border:0;">
+  </iframe>
+
 </div>
-</section>
-
-<!-- REVIEWS -->
-<section id="reviews" data-aos="fade-up">
-<h2>Client Reviews</h2>
-
-<div class="review-container">
-
-<div class="box review">
-<img src="https://cdn-icons-png.flaticon.com/512/149/149071.png">
-<h3>Hans Raj Saini</h3>
-<p>Excellent work and timely delivery. Highly recommended!</p>
-</div>
-
-<div class="box review">
-<img src="https://cdn-icons-png.flaticon.com/512/149/149071.png">
-<h3>Shoaib Akhter</h3>
-<p>Professional team with great attention to detail.</p>
-</div>
-
-</div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact" data-aos="fade-up">
-<h2>Our Location</h2>
-
-<iframe 
-src="https://maps.google.com/maps?q=Plot%20No.%20127%20Behind%20Geeta%20Mandir%20Bakshi%20Nagar%20Jammu&t=&z=17&ie=UTF8&iwloc=&output=embed"
-width="100%" height="320" style="border:0;">
-</iframe>
-
-<p>
-📍 Plot No. 127, Behind Geeta Mandir, Near Karan Hotel, Bakshi Nagar, Jammu  
-📞 +91 95413 93521 / +91 8492893521
-</p>
-</section>
 
 <footer>
-  © 2026 GB Mega Constructions
+  <p>© 2026 GB Mega Construction</p>
 </footer>
 
-<!-- Buttons -->
-<a href="https://wa.me/919541393521" class="whatsapp">WhatsApp</a>
-<a href="tel:+919541393521" class="call">Call</a>
-
-<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-<script>
-AOS.init({duration:1000});
-</script>
+<a class="whatsapp" href="https://wa.me/919541393521">
+  Chat Now
+</a>
 
 </body>
 </html>
