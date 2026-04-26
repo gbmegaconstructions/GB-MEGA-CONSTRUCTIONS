@@ -1,114 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>GB Mega Constructions</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GB Mega Constructions</title>
 
-  <!-- AOS Animation -->
-  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<!-- Animation -->
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-    }
+<style>
+body {margin:0;font-family:Arial;}
 
-    header {
-      background: #111;
-      color: white;
-      padding: 15px;
-      text-align: center;
-    }
+header {background:#111;color:white;text-align:center;padding:15px;}
 
-    nav {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      background: #222;
-      padding: 10px;
-    }
+nav {background:#222;padding:10px;text-align:center;}
+nav a {color:white;margin:0 15px;text-decoration:none;}
+nav a:hover {color:orange;}
 
-    nav a {
-      color: white;
-      text-decoration: none;
-      transition: 0.3s;
-    }
+.hero {
+  background:url('https://images.unsplash.com/photo-1503387762-592deb58ef4e') center/cover;
+  height:80vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:white;
+  font-size:35px;
+}
 
-    nav a:hover {
-      color: orange;
-    }
+section {padding:40px;}
 
-    .hero {
-      background: url('https://images.unsplash.com/photo-1503387762-592deb58ef4e') no-repeat center/cover;
-      height: 80vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      font-size: 40px;
-      text-align: center;
-    }
+.box {
+  box-shadow:0 0 10px rgba(0,0,0,0.1);
+  padding:20px;
+  margin:10px;
+}
 
-    section {
-      padding: 50px;
-    }
+.review-container {
+  display:flex;
+  flex-wrap:wrap;
+  gap:20px;
+}
 
-    .about {
-      background: #f4f4f4;
-    }
+.review {
+  flex:1;
+  min-width:250px;
+  text-align:center;
+}
 
-    .services {
-      display: flex;
-      gap: 20px;
-      flex-wrap: wrap;
-    }
+.review img {
+  width:60px;
+  border-radius:50%;
+}
 
-    .card {
-      flex: 1;
-      min-width: 250px;
-      background: white;
-      padding: 20px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      transition: 0.3s;
-    }
-
-    .card:hover {
-      transform: scale(1.05);
-    }
-
-    .reviews {
-      background: #eee;
-    }
-
-    .review-box {
-      display: flex;
-      gap: 20px;
-      flex-wrap: wrap;
-    }
-
-    .review {
-      background: white;
-      padding: 20px;
-      flex: 1;
-      min-width: 250px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      text-align: center;
-    }
-
-    .review img {
-      width: 60px;
-      height: 60px;
-      border-radius: 50%;
-    }
-
-    footer {
-      background: #111;
-      color: white;
-      text-align: center;
-      padding: 15px;
-    }
-  </style>
+footer {
+  background:#111;
+  color:white;
+  text-align:center;
+  padding:15px;
+}
+</style>
 </head>
 
 <body>
@@ -120,85 +70,76 @@
 
 <nav>
   <a href="#">Home</a>
-  <a href="#">About</a>
-  <a href="#">Services</a>
-  <a href="#">Contact</a>
+  <a href="#about">About</a>
+  <a href="#reviews">Reviews</a>
+  <a href="#contact">Contact</a>
 </nav>
 
 <div class="hero" data-aos="zoom-in">
   Building Your Future
 </div>
 
-<section class="about" data-aos="fade-up">
-  <h2>About Us</h2>
-  <p>
-    GB Mega Constructions is a trusted name in the construction industry,
-    delivering high-quality residential and commercial projects. With years
-    of experience, our mission is to transform your ideas into reality with
-    precision, dedication, and excellence.
-  </p>
+<!-- ABOUT -->
+<section id="about" data-aos="fade-up">
+<h2>About Us</h2>
 
-  <p>
-    We specialize in modern construction techniques, ensuring durability,
-    safety, and aesthetic appeal in every project. Our expert team works
-    closely with clients to understand their vision and provide customized
-    solutions that exceed expectations.
-  </p>
+<p>
+GB Mega Constructions is a trusted and growing construction company known for delivering high-quality residential and commercial projects. We focus on strong foundations, modern design, and long-lasting structures.
+</p>
 
-  <p>
-    From small homes to large-scale commercial projects, we are committed to
-    quality workmanship, timely delivery, and complete customer satisfaction.
-  </p>
+<p>
+Our team ensures every project is completed with precision, safety, and attention to detail. We believe in building not just structures, but strong relationships with our clients.
+</p>
+
+<p>
+From small homes to large commercial projects, we are committed to quality work, timely delivery, and customer satisfaction.
+</p>
 </section>
 
-<section data-aos="fade-up">
-  <h2>Our Services</h2>
-  <div class="services">
-    <div class="card">
-      <h3>House Construction</h3>
-      <p>Modern and durable house building solutions.</p>
-    </div>
+<!-- REVIEWS -->
+<section id="reviews" data-aos="fade-up">
+<h2>Client Reviews</h2>
 
-    <div class="card">
-      <h3>Renovation</h3>
-      <p>Upgrade your existing property with style.</p>
-    </div>
+<div class="review-container">
 
-    <div class="card">
-      <h3>Interior Design</h3>
-      <p>Beautiful interiors that match your lifestyle.</p>
-    </div>
-  </div>
+<div class="box review">
+<img src="https://cdn-icons-png.flaticon.com/512/149/149071.png">
+<h3>Hans Raj Saini</h3>
+<p>Excellent work and timely delivery. Highly recommended!</p>
+</div>
+
+<div class="box review">
+<img src="https://cdn-icons-png.flaticon.com/512/149/149071.png">
+<h3>Shoaib Akhter</h3>
+<p>Professional team with great attention to detail.</p>
+</div>
+
+</div>
 </section>
 
-<section class="reviews" data-aos="fade-up">
-  <h2>Client Reviews</h2>
-  <div class="review-box">
+<!-- MAP -->
+<section id="contact" data-aos="fade-up">
+<h2>Our Location</h2>
 
-    <div class="review">
-      <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png">
-      <h3>Hans Raj Saini</h3>
-      <p>Excellent work and timely delivery. Highly recommended!</p>
-    </div>
+<iframe 
+src="https://maps.google.com/maps?q=Bakshi%20Nagar%20Jammu&t=&z=13&ie=UTF8&iwloc=&output=embed"
+width="100%" height="300" style="border:0;">
+</iframe>
 
-    <div class="review">
-      <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png">
-      <h3>Shoaib Akhter</h3>
-      <p>Professional team with great attention to detail.</p>
-    </div>
-
-  </div>
+<p>
+📍 Plot No. 127, Behind Geeta Mandir, Bakshi Nagar, Jammu  
+📞 +91 95413 93521 / +91 8492893521
+</p>
 </section>
 
 <footer>
-  <p>Contact: +91 95413 93521 | +91 8492893521</p>
-  <p>Address: Plot No. 127, Behind Geeta Mandir, Bakshi Nagar, Jammu</p>
+  © 2026 GB Mega Constructions
 </footer>
 
-<!-- AOS Script -->
+<!-- Animation Script -->
 <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 <script>
-  AOS.init();
+AOS.init();
 </script>
 
 </body>
