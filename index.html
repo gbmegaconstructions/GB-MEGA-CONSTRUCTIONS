@@ -4,126 +4,114 @@
   <title>GB Mega Construction</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-
   <style>
-    body {margin:0;font-family:Poppins;background:#0f172a;color:#fff;}
-    a {text-decoration:none;color:#fff;}
-
-    .topbar {
-      background:#020617;
-      padding:8px;
-      text-align:center;
-      font-size:14px;
-    }
+    body { margin:0; font-family: Arial; line-height:1.6; }
 
     header {
-      text-align:center;
+      background:#111;
+      color:#fff;
       padding:15px;
-      background:#020617;
+      text-align:center;
     }
 
-    header img {width:80px;}
+    header img {
+      width:80px;
+      display:block;
+      margin:auto;
+      margin-bottom:10px;
+    }
 
     nav {
-      background:rgba(0,0,0,0.6);
-      backdrop-filter:blur(10px);
+      background:#333;
       padding:12px;
       text-align:center;
+      position:sticky;
+      top:0;
     }
 
     nav a {
+      color:white;
       margin:10px;
-      font-weight:500;
+      text-decoration:none;
+      font-weight:bold;
     }
 
-    nav a:hover {color:#ff7a18;}
-
     .hero {
-      background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.7)),
-      url('https://images.unsplash.com/photo-1503387762-592deb58ef4e') center/cover;
+      background:url('https://images.unsplash.com/photo-1503387762-592deb58ef4e') no-repeat center;
+      background-size:cover;
+      color:white;
       padding:120px 20px;
       text-align:center;
     }
 
+    .hero h1 { font-size:45px; }
+
     .btn {
-      display:inline-block;
-      margin:5px;
-      padding:10px 20px;
+      background:#ff6600;
+      padding:12px 25px;
+      color:white;
+      text-decoration:none;
       border-radius:5px;
-      background:#ff7a18;
+      margin:5px;
+      display:inline-block;
     }
 
-    .section {padding:60px 20px;text-align:center;}
+    .section {
+      padding:50px 20px;
+      text-align:center;
+    }
 
-    .cards {display:flex;flex-wrap:wrap;justify-content:center;}
+    .cards {
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:center;
+    }
 
     .card {
       width:250px;
-      margin:10px;
+      margin:15px;
       padding:20px;
-      background:rgba(255,255,255,0.05);
+      border:1px solid #ddd;
       border-radius:10px;
     }
 
     .gallery img {
-      width:260px;
+      width:280px;
       margin:10px;
       border-radius:10px;
     }
 
     footer {
-      background:#020617;
-      padding:20px;
+      background:#111;
+      color:white;
       text-align:center;
+      padding:20px;
     }
 
-    .social {
-      margin-top:10px;
-    }
-
-    .social a {
-      margin:5px;
-      padding:8px 12px;
-      background:#ff7a18;
-      border-radius:5px;
-    }
-
-    .floating {
+    .whatsapp {
       position:fixed;
       bottom:20px;
       right:20px;
-      display:flex;
-      flex-direction:column;
-      gap:10px;
-    }
-
-    .floating a {
-      padding:12px;
+      background:#25D366;
+      color:white;
+      padding:12px 18px;
       border-radius:50px;
-      color:#fff;
-      font-size:14px;
+      text-decoration:none;
     }
-
-    .call {background:#2563eb;}
-    .whatsapp {background:#25D366;}
-    .insta {background:#E1306C;}
   </style>
 </head>
 
 <body>
 
-<div class="topbar">
-  📞 +91 95413 93521 | +91 84928 93521
-</div>
-
 <header>
   <img src="logo.png">
-  <h2>GB Mega Construction</h2>
+  <h1>GB Mega Construction</h1>
+  <p>Where dreams are built, one brick at a time.</p>
 </header>
 
 <nav>
   <a href="#">Home</a>
+  <a href="#about">About</a>
   <a href="#services">Services</a>
   <a href="#projects">Projects</a>
   <a href="#contact">Contact</a>
@@ -131,49 +119,74 @@
 
 <div class="hero">
   <h1>Building Your Future</h1>
-  <a class="btn" href="tel:+919541393521">Call</a>
+  <p>Trusted Construction Services in Jammu</p>
+  <a class="btn" href="tel:+919541393521">Call Now</a>
   <a class="btn" href="https://wa.me/919541393521">WhatsApp</a>
-  <a class="btn" href="https://www.instagram.com/gb_mega_constructions?igsh=MWZhczQwdXE4dTZkdA==" target="_blank">Instagram</a>
+</div>
+
+<div class="section" id="about">
+  <h2>About Us</h2>
+  <p>We are a trusted construction company delivering high-quality residential and commercial projects with complete customer satisfaction.</p>
 </div>
 
 <div class="section" id="services">
   <h2>Our Services</h2>
   <div class="cards">
-    <div class="card">Residential</div>
-    <div class="card">Commercial</div>
-    <div class="card">Interior</div>
-    <div class="card">Renovation</div>
+    <div class="card">Residential Construction</div>
+    <div class="card">Commercial Projects</div>
+    <div class="card">Interior Design</div>
+    <div class="card">Renovation Work</div>
   </div>
 </div>
 
 <div class="section gallery" id="projects">
-  <h2>Our Work</h2>
-  <img src="work1.jpg">
-  <img src="work2.jpg">
+  <h2>Our Projects</h2>
+  <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e">
+  <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd">
+  <img src="https://images.unsplash.com/photo-1509395176047-4a66953fd231">
+</div>
+
+<div class="section">
+  <h2>Client Reviews</h2>
+  <p>⭐️⭐️⭐️⭐️⭐️ Excellent work quality!</p>
+  <p>⭐️⭐️⭐️⭐️⭐️ Highly recommended service.</p>
 </div>
 
 <div class="section" id="contact">
-  <h2>Contact</h2>
-  <p>📍 Bakshi Nagar, Jammu</p>
+  <h2>Contact Us</h2>
 
-  <a class="btn" href="https://maps.app.goo.gl/75HpwdWBGeQumM2j6?g_st=ic">Directions</a>
+  <p><b>📍 Address:</b><br>
+  Plot No. 127, Behind Geeta Mandir,<br>
+  Near Karan Hotel, Bakshi Nagar, Jammu</p>
+
+  <p><b>📞 Call Us:</b><br>
+  <a href="tel:+919541393521">+91 95413 93521</a><br>
+  <a href="tel:+918492893521">+91 84928 93521</a>
+  </p>
+
+  <br>
+
+  <a class="btn" href="https://maps.app.goo.gl/75HpwdWBGeQumM2j6?g_st=ic" target="_blank">
+    Get Directions
+  </a>
+
+  <br><br>
+
+  <!-- 👉 Yaha apna EXACT embed map daalna (Google Maps se) -->
+  <iframe 
+  src="https://maps.google.com/maps?q=Bakshi%20Nagar%20Jammu&output=embed"
+  width="100%" height="300" style="border:0;">
+  </iframe>
+
 </div>
 
 <footer>
   <p>© 2026 GB Mega Construction</p>
-
-  <div class="social">
-    <a href="tel:+919541393521">Call</a>
-    <a href="https://wa.me/919541393521">WhatsApp</a>
-    <a href="https://www.instagram.com/gb_mega_constructions?igsh=MWZhczQwdXE4dTZkdA==">Instagram</a>
-  </div>
 </footer>
 
-<div class="floating">
-  <a class="call" href="tel:+919541393521">📞</a>
-  <a class="whatsapp" href="https://wa.me/919541393521">💬</a>
-  <a class="insta" href="https://www.instagram.com/gb_mega_constructions?igsh=MWZhczQwdXE4dTZkdA==">📷</a>
-</div>
+<a class="whatsapp" href="https://wa.me/919541393521">
+  Chat Now
+</a>
 
 </body>
 </html>
