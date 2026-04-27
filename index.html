@@ -4,33 +4,28 @@
   <title>GB Mega Construction</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Premium Font -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
   <style>
-    * { margin:0; padding:0; box-sizing:border-box; }
-    html { scroll-behavior:smooth; }
+    body {margin:0;font-family:Poppins;background:#0f172a;color:#fff;}
+    a {text-decoration:none;color:#fff;}
 
-    body {
-      font-family:'Poppins',sans-serif;
-      background:#0f172a;
-      color:#fff;
+    .topbar {
+      background:#020617;
+      padding:8px;
+      text-align:center;
+      font-size:14px;
     }
 
     header {
       text-align:center;
-      padding:20px;
+      padding:15px;
       background:#020617;
     }
 
-    header img {
-      width:80px;
-      margin-bottom:10px;
-    }
+    header img {width:80px;}
 
     nav {
-      position:sticky;
-      top:0;
       background:rgba(0,0,0,0.6);
       backdrop-filter:blur(10px);
       padding:12px;
@@ -38,16 +33,11 @@
     }
 
     nav a {
-      color:#fff;
-      margin:12px;
-      text-decoration:none;
+      margin:10px;
       font-weight:500;
-      transition:0.3s;
     }
 
-    nav a:hover {
-      color:#ff7a18;
-    }
+    nav a:hover {color:#ff7a18;}
 
     .hero {
       background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.7)),
@@ -56,101 +46,84 @@
       text-align:center;
     }
 
-    .hero h1 {
-      font-size:48px;
-      margin-bottom:10px;
-    }
-
     .btn {
-      background:linear-gradient(45deg,#ff7a18,#ff3c00);
-      padding:12px 25px;
-      border-radius:6px;
-      text-decoration:none;
-      color:#fff;
       display:inline-block;
       margin:5px;
-      transition:0.3s;
+      padding:10px 20px;
+      border-radius:5px;
+      background:#ff7a18;
     }
 
-    .btn:hover {
-      transform:scale(1.08);
-    }
+    .section {padding:60px 20px;text-align:center;}
 
-    .section {
-      padding:60px 20px;
-      text-align:center;
-    }
-
-    .glass {
-      background:rgba(255,255,255,0.05);
-      backdrop-filter:blur(10px);
-      border-radius:12px;
-      padding:20px;
-      margin:10px;
-    }
-
-    .cards {
-      display:flex;
-      flex-wrap:wrap;
-      justify-content:center;
-    }
+    .cards {display:flex;flex-wrap:wrap;justify-content:center;}
 
     .card {
-      width:260px;
-      margin:15px;
+      width:250px;
+      margin:10px;
       padding:20px;
-      border-radius:12px;
       background:rgba(255,255,255,0.05);
-      backdrop-filter:blur(10px);
-      transition:0.3s;
-    }
-
-    .card:hover {
-      transform:translateY(-10px);
-      box-shadow:0 10px 25px rgba(0,0,0,0.5);
+      border-radius:10px;
     }
 
     .gallery img {
-      width:280px;
+      width:260px;
       margin:10px;
       border-radius:10px;
-      transition:0.4s;
-    }
-
-    .gallery img:hover {
-      transform:scale(1.1);
     }
 
     footer {
-      text-align:center;
-      padding:20px;
       background:#020617;
+      padding:20px;
+      text-align:center;
     }
 
-    .whatsapp {
+    .social {
+      margin-top:10px;
+    }
+
+    .social a {
+      margin:5px;
+      padding:8px 12px;
+      background:#ff7a18;
+      border-radius:5px;
+    }
+
+    .floating {
       position:fixed;
       bottom:20px;
       right:20px;
-      background:#25D366;
-      padding:12px 18px;
-      border-radius:50px;
-      text-decoration:none;
-      color:#fff;
+      display:flex;
+      flex-direction:column;
+      gap:10px;
     }
+
+    .floating a {
+      padding:12px;
+      border-radius:50px;
+      color:#fff;
+      font-size:14px;
+    }
+
+    .call {background:#2563eb;}
+    .whatsapp {background:#25D366;}
+    .insta {background:#E1306C;}
   </style>
 </head>
 
 <body>
 
+<div class="topbar">
+  📞 +91 95413 93521 | +91 84928 93521
+</div>
+
 <header>
   <img src="logo.png">
-  <h1>GB Mega Construction</h1>
-  <p>Where dreams are built, one brick at a time.</p>
+  <h2>GB Mega Construction</h2>
 </header>
 
 <nav>
   <a href="#">Home</a>
-  <a href="#about">About</a>
   <a href="#services">Services</a>
   <a href="#projects">Projects</a>
   <a href="#contact">Contact</a>
@@ -158,64 +131,49 @@
 
 <div class="hero">
   <h1>Building Your Future</h1>
-  <p>Premium Construction Services</p>
-  <a class="btn" href="tel:+919541393521">Call Now</a>
+  <a class="btn" href="tel:+919541393521">Call</a>
   <a class="btn" href="https://wa.me/919541393521">WhatsApp</a>
-</div>
-
-<div class="section" id="about">
-  <div class="glass">
-    <h2>About Us</h2>
-    <p>We provide modern and reliable construction services with top quality and trust.</p>
-  </div>
+  <a class="btn" href="https://www.instagram.com/gb_mega_constructions?igsh=MWZhczQwdXE4dTZkdA==" target="_blank">Instagram</a>
 </div>
 
 <div class="section" id="services">
   <h2>Our Services</h2>
   <div class="cards">
-    <div class="card">Residential Construction</div>
-    <div class="card">Commercial Projects</div>
-    <div class="card">Interior Design</div>
-    <div class="card">Renovation Work</div>
+    <div class="card">Residential</div>
+    <div class="card">Commercial</div>
+    <div class="card">Interior</div>
+    <div class="card">Renovation</div>
   </div>
 </div>
 
 <div class="section gallery" id="projects">
-  <h2>Our Projects</h2>
+  <h2>Our Work</h2>
   <img src="work1.jpg">
   <img src="work2.jpg">
-  <img src="work3.jpg">
 </div>
 
 <div class="section" id="contact">
-  <h2>Contact Us</h2>
+  <h2>Contact</h2>
+  <p>📍 Bakshi Nagar, Jammu</p>
 
-  <p>📍 Plot No. 127, Bakshi Nagar, Jammu</p>
-
-  <p>
-    📞 <a href="tel:+919541393521">+91 95413 93521</a><br>
-    📞 <a href="tel:+918492893521">+91 84928 93521</a>
-  </p>
-
-  <a class="btn" href="https://maps.app.goo.gl/75HpwdWBGeQumM2j6?g_st=ic">
-    Get Directions
-  </a>
-
-  <br><br>
-
-  <iframe 
-  src="https://maps.google.com/maps?q=Bakshi%20Nagar%20Jammu&output=embed"
-  width="100%" height="300">
-  </iframe>
+  <a class="btn" href="https://maps.app.goo.gl/75HpwdWBGeQumM2j6?g_st=ic">Directions</a>
 </div>
 
 <footer>
   <p>© 2026 GB Mega Construction</p>
+
+  <div class="social">
+    <a href="tel:+919541393521">Call</a>
+    <a href="https://wa.me/919541393521">WhatsApp</a>
+    <a href="https://www.instagram.com/gb_mega_constructions?igsh=MWZhczQwdXE4dTZkdA==">Instagram</a>
+  </div>
 </footer>
 
-<a class="whatsapp" href="https://wa.me/919541393521">
-  Chat Now
-</a>
+<div class="floating">
+  <a class="call" href="tel:+919541393521">📞</a>
+  <a class="whatsapp" href="https://wa.me/919541393521">💬</a>
+  <a class="insta" href="https://www.instagram.com/gb_mega_constructions?igsh=MWZhczQwdXE4dTZkdA==">📷</a>
+</div>
 
 </body>
 </html>
